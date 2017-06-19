@@ -1,20 +1,21 @@
+<<<<<<< HEAD
 #Docker file to install Nodejs and mocha and any supportimg software.
 #This file can be edited as per the requiremnet.
 
 FROM node:alpine
-RUN apt-get update
+#RUN apt-get update
 
 #Install common software
 
-RUN apt-get -y install bzip2
-RUN apt-get -y install software-properties-common
-RUN apt-get -y install python-software-properties
-RUN apt-get -y install vim
+#RUN apt-get -y install bzip2
+#RUN apt-get -y install software-properties-common
+#RUN apt-get -y install python-software-properties
+#RUN apt-get -y install vim
 
 # Install the Mocha and Nodejs
-RUN apt-get -y install curl
-RUN apt-get -y install npm
-RUN apt-get -y install nodejs
+#RUN apt-get -y install curl
+#RUN apt-get -y install npm
+#RUN apt-get -y install nodejs
 RUN ln -s /usr/bin/nodejs /usr/bin/node
 RUN npm -y install mocha -g
 
@@ -36,3 +37,6 @@ RUN nodejs -v
 #RUN mocha /tmp/program/calc.js
 RUN mocha /tmp/program/server.js
 RUN mocha /tmp/program/test.js
+=======
+
+>>>>>>> e74fe3fc084be23ba6abdd8e5c60afba754c7b40
