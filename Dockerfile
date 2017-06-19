@@ -24,5 +24,5 @@ RUN node -v
 # Run the script
 #RUN /tmp/program/script.sh
 #RUN mocha /tmp/program/calc.js
-RUN mocha /tmp/program/source_code/server.js
-RUN mocha /tmp/program/source_code/test.js
+RUN mocha /tmp/program/server.js
+RUN mocha /tmp/program/test.js
