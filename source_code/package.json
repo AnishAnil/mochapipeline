@@ -1,0 +1,23 @@
+{
+  "name": "mochapipeline",
+  "version": "1.0.0",
+  "description": "This is a Test for mocha",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnishAnil/mochapipeline.git"
+  },
+  "author": "Anish",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AnishAnil/mochapipeline/issues"
+  },
+  "homepage": "https://github.com/AnishAnil/mochapipeline#readme",
+  "dependencies": {
+    "mocha": "^3.4.2"
+  }
+}
