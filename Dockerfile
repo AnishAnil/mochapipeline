@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 #Docker file to install Nodejs and mocha and any supportimg software.
 #This file can be edited as per the requiremnet.
 
@@ -37,6 +37,3 @@ RUN nodejs -v
 #RUN mocha /tmp/program/calc.js
 RUN mocha /tmp/program/server.js
 RUN mocha /tmp/program/test.js
-=======
-
->>>>>>> e74fe3fc084be23ba6abdd8e5c60afba754c7b40
