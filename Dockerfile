@@ -19,7 +19,7 @@ RUN mkdir /tmp/program
 #COPY test.js /tmp/program
 COPY source_code /tmp/program
 RUN mocha --version
-RUN nodejs -v
+RUN node -v
 
 # Run the script
 #RUN /tmp/program/script.sh
