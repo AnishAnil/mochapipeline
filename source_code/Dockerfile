@@ -16,7 +16,7 @@ FROM node:alpine
 #RUN apt-get -y install npm
 #RUN apt-get -y install nodejs
 #RUN ln -s /usr/bin/nodejs /usr/bin/node
-#RUN npm -y install mocha -g
+RUN npm -y install mocha -g
 
 # Copy FS files into the container
 RUN mkdir /tmp/program
@@ -26,7 +26,8 @@ RUN mkdir /tmp/program
 #COPY test.js /tmp/program
 #COPY script.sh /tmp/program
 #RUN chmod +x /tmp/program/script.sh
-COPY source_code /tmp/program
+COPY mochapipeline /tmp/program
+#COPY source_code /tmp/program
 #COPY test.js /tmp/program
 RUN mocha --version
 RUN nodejs -v
