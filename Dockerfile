@@ -14,6 +14,6 @@ RUN node -v
 
 # Run the script
 RUN mocha /tmp/program/server.js
-#RUN mocha /tmp/program/test.js
-RUN npm test
+RUN mocha /tmp/program/test.js
+#RUN npm test
 
