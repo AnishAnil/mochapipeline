@@ -4,8 +4,8 @@
 
 FROM node:alpine
 
-RUN ln -s /usr/bin/nodejs /usr/bin/node
-RUN npm -y install mocha -g
+#RUN ln -s /usr/bin/nodejs /usr/bin/node
+#RUN npm -y install mocha -g
 
 # Copy FS files into the container
 RUN mkdir /tmp/program
