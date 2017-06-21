@@ -10,7 +10,7 @@ FROM node:alpine
 # RUN mkdir /tmp/program
 COPY source_code /tmp/program
 WORKDIR /tmp/program
-RUN npm install 
+RUN npm install
 # RUN mocha --version
 # RUN node -v
 
@@ -19,4 +19,4 @@ RUN npm install
 # RUN mocha /tmp/program/test.js
 #RUN npm test
 
-ENTRYPOINT [ "npm", "test" ]
+ENTRYPOINT [ "npm", "server.js", "test" ]
