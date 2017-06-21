@@ -4,16 +4,19 @@
 
 FROM node:alpine
 
-RUN npm -y install mocha -g
+#RUN npm -y install mocha -g
 
 # Copy FS files into the container
-RUN mkdir /tmp/program
+# RUN mkdir /tmp/program
 COPY source_code /tmp/program
-RUN mocha --version
-RUN node -v
+WORKDIR /tmp/program
+RUN npm install 
+# RUN mocha --version
+# RUN node -v
 
 # Run the script
-RUN mocha /tmp/program/server.js
-RUN mocha /tmp/program/test.js
+# RUN mocha /tmp/program/server.js
+# RUN mocha /tmp/program/test.js
 #RUN npm test
 
+ENTRYPOINT [ "npm", "test" ]
