@@ -19,4 +19,4 @@ RUN npm install
 # RUN mocha /tmp/program/test.js
 #RUN npm test
 
-ENTRYPOINT [ "npm", "server.js", "test" ]
+ENTRYPOINT [ "npm", "test" ]
