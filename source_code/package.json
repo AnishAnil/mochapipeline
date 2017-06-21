@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/AnishAnil/mochapipeline#readme",
   "dependencies": {
-    "mocha": "^3.4.2"
+    "mocha": "^3.4.2",
+    "express": "^4.15.3"
   }
 }
